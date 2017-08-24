@@ -17,7 +17,7 @@ angular.module('myApp', [])
       $http.get("http://www.omdbapi.com/?s=" + $scope.search)http://api.sportradar.us/mlb-t6/players/6e1cac5c-b059-4b80-a267-5143b19efb27/profile.json?api_key=rsg2ehj4293rcr9x794dv7zr
       .then(function(response){ $scope.related = response.data; });
       */
-      $http.get("http://api.sportradar.us/mlb-t6/players/6e1cac5c-b059-4b80-a267-5143b19efb27/profile.json?api_key=rsg2ehj4293rcr9x794dv7zr")
+      $http.get("https://api.sportradar.us/mlb-t6/players/6e1cac5c-b059-4b80-a267-5143b19efb27/profile.json?api_key=rsg2ehj4293rcr9x794dv7zr")
        .then(function(response){ $scope.details = response.data; });
 
     }
